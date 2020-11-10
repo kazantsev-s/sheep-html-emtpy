@@ -45,25 +45,25 @@
             <ul class="nav flex-column">
               <li class="nav-item">
                 <a class="nav-link active" href="index.html">
-                  <i class="material-icons">edit</i>
+                  <i class="material-icons">web</i> <!-- web_asset -->
                   <span>Главная</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="components-blog-posts.html">
-                  <i class="material-icons">vertical_split</i>
+                  <i class="material-icons">pie_chart</i>
                   <span>За день</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="add-new-post.html">
-                  <i class="material-icons">note_add</i>
+                  <i class="material-icons">insert_chart</i>
                   <span>За период</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link " href="form-components.html">
-                  <i class="material-icons">view_module</i>
+                  <i class="material-icons">download</i>
                   <span>Загрузка в БД</span>
                 </a>
               </li>
@@ -153,7 +153,7 @@
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Баранов</span>
-                        <h6 class="stats-small__value count my-3">2,390</h6>
+                        <h6 class="stats-small__value count my-3">20</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--increase">4.7%</span>
@@ -169,7 +169,7 @@
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Овец</span>
-                        <h6 class="stats-small__value count my-3">182</h6>
+                        <h6 class="stats-small__value count my-3">60</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
@@ -185,7 +185,7 @@
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Ягнят</span>
-                        <h6 class="stats-small__value count my-3">8,147</h6>
+                        <h6 class="stats-small__value count my-3">10</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--decrease">3.8%</span>
@@ -201,7 +201,7 @@
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Старых</span>
-                        <h6 class="stats-small__value count my-3">2,413</h6>
+                        <h6 class="stats-small__value count my-3">5</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--increase">12.4%</span>
@@ -217,7 +217,7 @@
                     <div class="d-flex flex-column m-auto">
                       <div class="stats-small__data text-center">
                         <span class="stats-small__label text-uppercase">Больных</span>
-                        <h6 class="stats-small__value count my-3">17,281</h6>
+                        <h6 class="stats-small__value count my-3">5</h6>
                       </div>
                       <div class="stats-small__data">
                         <span class="stats-small__percentage stats-small__percentage--decrease">2.4%</span>
@@ -231,72 +231,39 @@
             <!-- End Small Stats Blocks -->
             <div class="row">
               <!-- Users Stats -->
-              <div class="col-lg-8 col-md-12 col-sm-12 mb-4">
+              <div class="col-lg-7 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small">
                   <div class="card-header border-bottom">
-                    <h6 class="m-0">Статитистика за последнюю неделю</h6>
+                    <h6 class="m-0">Утро 08.11</h6>
                   </div>
+                  &nbsp;
                   <div class="card-body pt-0">
-                    <div class="row border-bottom py-2 bg-light">
-                      <div class="col-12 col-sm-12 col-xl-12 col-lg-12">
-                        <canvas id="myChart"></canvas>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-                        <!-- <script src="graphics.js"></script> -->
-                        <script>
-                            var ctx = document.getElementById('myChart').getContext('2d');
-                            
-                
-                            var chart = new Chart(ctx, {
-                                type: 'bar',
-                
-                                data: {
-                                    labels: ["2020-20-20", "2020-21-20", "2020-22-20", "2020-23-20", "2020-24-20", "2020-25-20", "2020-26-20"],
-                                    datasets: [
-                                        {
-                                            label: 'Утром',
-                                            backgroundColor: 'rgba(255,65,105,0.1)',
-                                            borderColor: 'rgba(255,65,105,1)',
-                                            pointBackgroundColor: '#ffffff',
-                                            pointHoverBackgroundColor: 'rgba(255,65,105,1)',
-                                            pointBorderColor: 'rgba(255,65,105,1)',
-                                            borderWidth: 1,
-                                            pointRadius: 0,
-                                            pointHoverRadius: 2,
-                                            data: [10, 20, 30, 25, 45, 15, 25],
-                                        },
-                                        {
-                                            label: 'Вечером',
-                                            backgroundColor: 'rgba(0,123,255,0.1)',
-                                            borderColor: 'rgba(0,123,255,1)',
-                                            pointBackgroundColor: '#ffffff',
-                                            pointHoverBackgroundColor: 'rgb(0,123,255)',
-                                            borderWidth: 1.5,
-                                            pointRadius: 0,
-                                            pointHoverRadius: 3,
-                                            data: [20, 10, 30, 45, 25, 20, 25],
-                                        }
-                                        ]
-                
-                                },
-                
-                                options: {
-                                    scales: {
-                                    yAxes: [ {
-                                    ticks: {
-                                       min: 0
-                                    }
-                                } ]
-                            }}
-                            });
-                        </script>
-                      </div>
-                    </div>
+                    <span class="main-page-card-text">Количество: 100</span>  
                   </div>
+                  &nbsp;
+                </div>
+                <p>&nbsp;</p>
+                
+                <style>
+                  .main-page-card-text {
+                    font-size: 1.35rem;
+                  }
+                </style>
+                <div class="card card-small">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Вечер 08.11</h6>
+                  </div>
+                  &nbsp;
+                  <div class="card-body pt-0">
+                    <span class="main-page-card-text">Количество: 98</span>  
+                  </div>
+                  &nbsp;
                 </div>
               </div>
+              
               <!-- End Users Stats -->
               <!-- Users By Device Stats -->
-              <div class="col-lg-4 col-md-12 col-sm-12 mb-4">
+              <div class="col-lg-5 col-md-12 col-sm-12 mb-4">
                 <div class="card card-small h-100">
                   <div class="card-header border-bottom">
                     <h6 class="m-0">Последняя загрузка</h6>
@@ -395,6 +362,16 @@
                   </div>
                 </div>
               </div>
+              <!-- <div class="col-lg-6 col-md-12 col-sm-12 mb-4">
+                <div class="card card-small">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">Вечер 08.11</h6>
+                  </div>
+                  <div class="card-body pt-0">
+                    Количество: 98  
+                  </div>
+                </div>
+              </div> -->
               <!-- End Users By Device Stats -->
               <!-- New Draft Component -->
               
